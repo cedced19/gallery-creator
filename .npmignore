@@ -1,0 +1,7 @@
+node_modules
+*.html
+*.jpg
+*.png
+.travis.yml
+.gitignore
+.npmignore
