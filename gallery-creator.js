@@ -17,7 +17,7 @@ if (typeof program.title == 'undefined') {
 }
 
 if (program.check) {
-    require('check-update')({packageName: 'check-update-tester', packageVersion: pkg.version, isCLI: true}, function(err, latestVersion, defaultMessage){
+    require('check-update')({packageName: pkg.name, packageVersion: pkg.version, isCLI: true}, function(err, latestVersion, defaultMessage){
         if(!err){
             console.log(defaultMessage);
         }
