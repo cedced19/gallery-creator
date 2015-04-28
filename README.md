@@ -2,8 +2,8 @@
 
 Create a web gallery with some images.
 
-[![Build Status](https://travis-ci.org/cedced19/md-publisher.svg?branch=master)](https://travis-ci.org/cedced19/md-publisher)
-[![NPM version](https://badge.fury.io/js/md-publisher.svg)](http://badge.fury.io/js/md-publisher)
+[![Build Status](https://travis-ci.org/cedced19/gallery-creator.svg?branch=master)](https://travis-ci.org/cedced19/gallery-creator)
+[![NPM version](https://badge.fury.io/js/gallery-creator.svg)](http://badge.fury.io/js/gallery-creator)
 
 ```
 npm install -g gallery-creator
