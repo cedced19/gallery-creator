@@ -18,5 +18,7 @@ npm install -g gallery-creator
 
 -t  --title [string]         specified the title
 
+-f  --filename [string]         specified the filename
+
 -c  --check         check if there are an update
 ```
