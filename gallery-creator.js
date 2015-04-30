@@ -3,7 +3,7 @@
 var program = require('commander'),
     colors = require('colors'),
     pkg = require('./package.json'),
-    fs = require('fs');
+    write = require('./lib/write');
 
 program
     .version(pkg.version)
@@ -17,7 +17,6 @@ if (typeof program.title == 'undefined') {
     program.title = 'Photos';
 }
 
-
 if (program.check) {
     require('check-update')({packageName: pkg.name, packageVersion: pkg.version, isCLI: true}, function(err, latestVersion, defaultMessage){
         if(!err){
@@ -28,21 +27,8 @@ if (program.check) {
 
 require('./lib/template')(program.title, function(content){
     if (typeof program.filename == 'string') {
-        fs.writeFile(process.cwd() + '/' + program.filename + '.html', content, function (err) {
-            if (err) {
-                console.log('There was an error.'.red);
-                process.exit(1);
-            }
-            console.log(colors.green('Done! Generated in ' + program.filename + '.html'));
-        });
+        write(program.filename, content);
     } else {
-        var time = Date.now();
-        fs.writeFile(process.cwd() + '/' + time + '.html', content, function (err) {
-            if (err) {
-                console.log('There was an error.'.red);
-                process.exit(1);
-            }
-            console.log(colors.green('Done! Generated in ' + time + '.html'));
-        });
+        write(Date.now(), content);
     }
 });
