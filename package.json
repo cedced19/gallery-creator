@@ -1,6 +1,6 @@
 {
   "name": "gallery-creator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create a web gallery with some images.",
   "main": "gallery-creator.js",
   "dependencies": {
