@@ -1,10 +1,10 @@
 {
   "name": "gallery-creator",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Create a web gallery with some images.",
   "main": "gallery-creator.js",
   "dependencies": {
-    "check-update": "0.0.7",
+    "check-update": "0.0.8",
     "colors": "^1.0.3",
     "commander": "^2.8.1"
   },
