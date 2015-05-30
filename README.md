@@ -12,13 +12,13 @@ npm install -g gallery-creator
 ## Options
 
 ```
--h, --help                  output usage information
+-h, --help                   output usage information
 
--V, --version               output the version number
+-V, --version                output the version number
 
 -t  --title [string]         specified the title
 
--f  --filename [string]         specified the filename
+-f  --filename [string]      specified the filename
 
--c  --check         check if there are an update
+-c  --check                  check if there are an update
 ```

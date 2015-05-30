@@ -1,6 +1,6 @@
 {
   "name": "gallery-creator",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Create a web gallery with some images.",
   "main": "gallery-creator.js",
   "dependencies": {
@@ -8,23 +8,27 @@
     "colors": "^1.0.3",
     "commander": "^2.8.1"
   },
+  "scripts": {
+    "test": "mocha --timeout 20000"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/cedced19/md-publisher"
+    "url": "git://github.com/cedced19/gallery-creator"
   },
   "bin": {
     "gallery-creator": "gallery-creator.js"
   },
   "keywords": [
-    "md",
-    "publisher",
+    "gallery",
+    "image",
+    "creator",
     "cli",
     "fast"
   ],
   "bugs": {
-    "url": "https://github.com/cedced19/md-publisher/issues"
+    "url": "https://github.com/cedced19/gallery-creator/issues"
   },
-  "homepage": "https://github.com/cedced19/md-publisher",
+  "homepage": "https://github.com/cedced19/gallery-creator",
   "devDependencies": {
     "mocha": "^2.1.0"
   },
